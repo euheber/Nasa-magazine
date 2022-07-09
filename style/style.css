@@ -109,4 +109,8 @@ p {
   img.image {
     margin: 0 auto;
   }
+
+  .float{
+    margin-bottom: 1.5rem;
+  }
 }
