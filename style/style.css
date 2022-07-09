@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Robot Slab", sans-serif;
+}
+
+:root {
+  --title: #c2c2c2;
+  --base: #0b3d91;
+  --second: #fc3d21;
+  --hover: #b92109;
+}
+img.logo {
+  width: 7rem;
+  filter: drop-shadow(3px 3px 1px black);
+}
+
+body {
+  background-color: var(--base);
+}
+
+img.image {
+  width: 30rem;
+  max-width: 100%;
+  margin-right: 1rem;
+}
+
+.float {
+  float: left;
+}
+
+#date {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--title);
+}
+
+/* header */
+
+header {
+  padding: 1rem 2rem 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+header nav ul li a {
+  color: var(--base);
+  transition: 0.5s ease;
+  color: var(--second);
+}
+header nav ul li a:hover {
+  color: var(--hover);
+}
+/* header */
+/* main */
+
+main {
+  width: 78%;
+  margin: 3rem auto;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  color: var(--title);
+}
+
+#content {
+  margin-top: 3rem;
+}
+
+p {
+  font-size: 2rem;
+  color: white;
+  font-family: "Lora", sans-serif;
+}
+/* main */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+
+  main {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  img.image {
+    margin: 0 auto;
+  }
+}
